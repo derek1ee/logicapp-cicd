@@ -3,22 +3,22 @@
     "contentVersion": "1.0.0.0",
     "parameters": { 
         "location": {
-            "value": "Australia Southeast"
+            "value": "West US 2"
         },
         "environmentName": {
-            "value": "delir2env3"
+            "value": "lar2env"
         },
         "projectName": {
-            "value": "delir2project3"
+            "value": "lar2proj"
         },
         "logicAppName": {
-            "value": "delir2la3"
+            "value": "lar2la"
         },
         "appServicePlanName": {
-            "value": "delir2asp3"
+            "value": "lar2asp"
         },
         "storageName": {
-            "value": "delir2storage3"
+            "value": "lar2s"
         },
         "kind": {
             "value": "StorageV2"
