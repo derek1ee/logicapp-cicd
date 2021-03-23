@@ -9,7 +9,6 @@ env:
   IMAGE_NAME: 'lar2acr'
   IMAGE_TAG: 'tag123'
   ACR_NAME: 'lar2acr'
-  IMAGE_URI: '${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}'
 
 on:
   - workflow_dispatch 
@@ -46,12 +45,12 @@ jobs:
     - name: 'Build & Push Docker Image'
       shell: bash
       run: |
-        docker build . -t  ${{ env.IMAGE_URI }}
-        docker push  ${{ env.IMAGE_URI }}
+        docker build . -t  ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+        docker push  ${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
 
     - name: 'Deploy Logic App Container'
       uses: Azure/functions-container-action@v1
       id: fa
       with:
         app-name: ${{ env.LA_NAME }}
-        image: '${{ env.IMAGE_URI }}'
+        image: '${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}'
