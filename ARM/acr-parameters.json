@@ -3,25 +3,25 @@
     "contentVersion": "1.0.0.0",
     "parameters": { 
         "acrName": {
-            "value": "acr-name"
+            "value": "lar2acr"
         },
         "environmentName": {
-            "value": "environmentname"
+            "value": "lar2env"
         },
         "location": {
-            "value": "Australia Southeast"
+            "value": "West US 2"
         },
         "projectName": {
-            "value": "projectname"
+            "value": "lar2proj"
         },
         "logicAppName": {
-            "value": "la-name"
+            "value": "lar2la"
         },
         "appServicePlanName": {
-            "value": "asp-name"
+            "value": "lar2asp"
         },
         "storageName": {
-            "value": "storage-name"
+            "value": "lar2s"
         },
         "kind": {
             "value": "StorageV2"

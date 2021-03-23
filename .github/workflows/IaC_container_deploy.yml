@@ -7,10 +7,10 @@ on:
   - workflow_dispatch 
 
 env:
-  RG_LA: 'your-la-rg'
-  RG_CON: 'your-con-rg'
-  IMAGE_NAME: 'your-cont-image'
-  IMAGE_TAG: 'your-tag-no'
+  RG_LA: 'delirg2'
+  RG_CON: 'delirg2'
+  IMAGE_NAME: 'lar2acr'
+  IMAGE_TAG: 'tag123'
 
 jobs:
   deploy-all: 
