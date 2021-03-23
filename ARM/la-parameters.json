@@ -6,19 +6,19 @@
             "value": "Australia Southeast"
         },
         "environmentName": {
-            "value": "delilarefresh2env"
+            "value": "delir2env"
         },
         "projectName": {
-            "value": "delilarefresh2project"
+            "value": "delir2project"
         },
         "logicAppName": {
-            "value": "delilarefresh2la"
+            "value": "delir2la"
         },
         "appServicePlanName": {
-            "value": "delilarefresh2asp"
+            "value": "delir2asp"
         },
         "storageName": {
-            "value": "delilarefresh2storage"
+            "value": "delir2storage"
         },
         "kind": {
             "value": "StorageV2"
