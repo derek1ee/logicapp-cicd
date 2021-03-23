@@ -4,11 +4,11 @@
 name: (container) Build and Deploy Logic App. 
 
 env:
-  RG_CON: 'your-con-rg'
-  LA_NAME: 'your-la-name'
-  IMAGE_NAME: 'your-image-name'
-  IMAGE_TAG: 'your-tag'
-  ACR_NAME: 'your-acr-name'
+  RG_CON: 'delirg2'
+  LA_NAME: 'lar2la'
+  IMAGE_NAME: 'lar2acr'
+  IMAGE_TAG: 'tag123'
+  ACR_NAME: 'lar2acr'
   IMAGE_URI: '${{ env.ACR_NAME }}.azurecr.io/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}'
 
 on:
