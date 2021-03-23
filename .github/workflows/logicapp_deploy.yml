@@ -49,10 +49,10 @@ jobs:
     - name: Create project folder
       run: |
         mkdir output
-        cp -r 'Stateless1' 'output/'
-        cp 'host.json' 'output/'
-        cp 'proxies.json' 'output/'
-        cp 'connections.json' 'output/'
+        cp -r '/Stateless1' '/output/'
+        cp 'host.json' '/output/'
+        cp 'proxies.json' '/output/'
+        cp 'connections.json' '/output/'
 
     - name: Easy Zip Files
       uses: vimtor/action-zip@v1
