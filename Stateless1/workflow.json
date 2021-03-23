@@ -7,7 +7,7 @@
                 "kind": "http",
                 "inputs": {
                     "statusCode": 200,
-                    "body": "The Fidelity advantage: A clear choice."
+                    "body": "The Fidelity advantage: A clear choice!"
                 },
                 "runAfter": {}
             }
