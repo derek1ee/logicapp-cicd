@@ -7,7 +7,7 @@
                 "kind": "http",
                 "inputs": {
                     "statusCode": 200,
-                    "body": "The current temperature is @{body('Get_current_weather')?['responses']?['weather']?['current']?['temp']}."
+                    "body": "The current temperature is @{body('Get_current_weather')?['responses']?['weather']?['current']?['temp']}"
                 },
                 "runAfter": {
                     "Get_current_weather": [
