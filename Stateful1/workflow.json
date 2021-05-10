@@ -1,0 +1,55 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Response": {
+                "type": "Response",
+                "kind": "http",
+                "inputs": {
+                    "statusCode": 200,
+                    "body": "The current temperature is @{body('Get_current_weather')?['responses']?['weather']?['current']?['temp']}."
+                },
+                "runAfter": {
+                    "Get_current_weather": [
+                        "Succeeded"
+                    ]
+                }
+            },
+            "Get_current_weather": {
+                "type": "ApiConnection",
+                "inputs": {
+                    "host": {
+                        "connection": {
+                            "referenceName": "msnweather"
+                        }
+                    },
+                    "method": "get",
+                    "path": "/current/@{encodeURIComponent(triggerBody()?['zipcode'])}",
+                    "queries": {
+                        "units": "Imperial"
+                    }
+                },
+                "runAfter": {}
+            }
+        },
+        "triggers": {
+            "manual": {
+                "type": "Request",
+                "kind": "Http",
+                "inputs": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "zipcode": {
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {}
+    },
+    "kind": "Stateful"
+}

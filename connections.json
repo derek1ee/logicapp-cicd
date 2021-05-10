@@ -1,0 +1,18 @@
+{
+  "managedApiConnections": {
+    "msnweather": {
+      "api": {
+        "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/providers/Microsoft.Web/locations/brazilsouth/managedApis/msnweather"
+      },
+      "connection": {
+        "id": "/subscriptions/80d4fe69-c95b-4dd2-a938-9250f1c8ab03/resourceGroups/DeliRG/providers/Microsoft.Web/connections/msnweather-5"
+      },
+      "connectionRuntimeUrl": "https://9d51d1ffc9f77572.00.common.logic-df.azure-apihub.net/apim/msnweather/2157b4533ae44d32a6a806c26c5db554/",
+      "authentication": {
+        "type": "Raw",
+        "scheme": "Key",
+        "parameter": "@appsetting('msnweather-connectionKey')"
+      }
+    }
+  }
+}

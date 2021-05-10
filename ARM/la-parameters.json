@@ -1,0 +1,33 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": { 
+        "location": {
+            "value": "West US 2"
+        },
+        "environmentName": {
+            "value": "lar2env"
+        },
+        "projectName": {
+            "value": "lar2proj"
+        },
+        "logicAppName": {
+            "value": "lar2la"
+        },
+        "appServicePlanName": {
+            "value": "lar2asp"
+        },
+        "storageName": {
+            "value": "lar2s"
+        },
+        "kind": {
+            "value": "StorageV2"
+        },
+        "skuName": {
+            "value": "Standard_LRS"
+        },
+        "skuTier": {
+            "value": "Standard"
+          }
+        }
+    }
