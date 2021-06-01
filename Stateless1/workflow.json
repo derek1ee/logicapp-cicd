@@ -2,12 +2,11 @@
     "definition": {
         "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
         "actions": {
-            "Response": {
-                "type": "Response",
-                "kind": "http",
+            "HTTP": {
+                "type": "Http",
                 "inputs": {
-                    "statusCode": 200,
-                    "body": "The Fidelity advantage: A clear choice!"
+                    "method": "POST",
+                    "uri": "http://localhost:7071/api/HttpTrigger1"
                 },
                 "runAfter": {}
             }
