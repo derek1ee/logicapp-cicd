@@ -6,7 +6,7 @@
                 "type": "Http",
                 "inputs": {
                     "method": "POST",
-                    "uri": "http://localhost:7071/api/HttpTrigger1"
+                    "uri": "@parameters('functionUri')"
                 },
                 "runAfter": {}
             }

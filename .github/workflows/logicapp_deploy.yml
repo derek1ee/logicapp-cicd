@@ -53,6 +53,7 @@ jobs:
         cp 'proxies.json' 'output/'
         cp 'connections.json' 'output/'
         cp -r 'Stateless1' 'output/'
+        cp 'parameters.prod.json' 'output/parameters.json'
 
     - name: Easy Zip Files
       uses: vimtor/action-zip@v1

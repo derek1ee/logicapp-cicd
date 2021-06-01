@@ -1,0 +1,6 @@
+{
+    "functionUri": {
+        "type": "string",
+        "value": "http://localhost:7071/api/HttpTrigger1"
+    }
+}
